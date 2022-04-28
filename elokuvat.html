@@ -7,6 +7,54 @@
     <title>Elokuvat</title>
 </head>
 <body>
+    <style>
+        .item1 { grid-area: header; background-image: url('./Kuvat/photographer-g9cbfdf302_640.jpg');}
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'header header header header header header'
+            'menu main main main main main'
+            'menu main main main main main';
+          gap: 0px;
+          background-color: #424f53;
+          padding: 0px;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(53, 53, 53, 0.8);
+          text-align: center;
+          padding: 50px 0;
+          font-size: 30px;
+          font-style: normal ; color: white;
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 200;
+}
+li a {
+  display: block;
+  width: 200px;
+}
+        </style>
     
-</body>
+    <div class="grid-container">
+      <div class="item1" >ELOKUVAT</div>
+      <div class="item2">Genret
+          <ul>
+              <li><a href="#">Toiminta</a></li>
+              <li><a href="#">Komedia</a></li>
+              <li><a href="#">Fantasia</a></li>
+              <li><a href="#">Jännitys</a></li>
+              <li><a href="#">Scifi</a></li>
+          </ul>
+      </div>
+      <div class="item3">Leffojen tiedot</div>  
+      
+    </div>
+    </body>
 </html>
