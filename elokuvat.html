@@ -8,7 +8,7 @@
 </head>
 <body>
     <style>
-        .item1 { grid-area: header; background-image: url('./Kuvat/photographer-g9cbfdf302_640.jpg');}
+        .item1 { grid-area: header; background-image: url('./Kuvat/photographer-ga5757513b_1280.jpg');}
         .item2 { grid-area: menu; }
         .item3 { grid-area: main; }
         
@@ -19,7 +19,7 @@
             'header header header header header header'
             'menu main main main main main'
             'menu main main main main main';
-          gap: 0px;
+          gap: 1px;
           background-color: #424f53;
           padding: 0px;
         }
@@ -27,7 +27,7 @@
         .grid-container > div {
           background-color: rgba(53, 53, 53, 0.8);
           text-align: center;
-          padding: 50px 0;
+          padding: 100px 0;
           font-size: 30px;
           font-style: normal ; color: white;
         }
@@ -36,9 +36,22 @@
   margin: 0;
   padding: 200;
 }
+li {
+  text-align: center;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+li:last-child {
+  border-bottom: none;
+}
 li a {
   display: block;
-  width: 200px;
+  background-color: #6a7578;
+  width: 100%;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #555;
+  color: white;
 }
         </style>
     
