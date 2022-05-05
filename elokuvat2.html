@@ -9,42 +9,143 @@
 </head>
 <body>
     <header class="header">
-        <span class="logo">Logo</span>
-        <nav class="navigation">
-            <a href="#">Etusivu</a>
-            <a href="#">Sivu 2</a>
-            <a href="#">Sivu 3</a>
-            <a href="#">sivu 4</a>
-            <a href="#">Sivu 5</a>
-
-
-
-        </nav>
+        <span class="logo">ELOKUVAT</span>
+        
     </header>
 
     <main class="main-content">
-
-        <article class="left">
-            <h1>Responsiivinen sivu</h1>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae doloribus praesentium optio, laborum necessitatibus cumque, voluptate aspernatur ratione vel impedit iusto quasi quae at fuga veritatis. Accusantium ipsum magnam blanditiis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quod incidunt culpa quasi quibusdam repellat? Aperiam sint facilis eveniet magni! Totam nam quibusdam ab laudantium velit laboriosam. Labore, saepe. Corrupti.
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quidem nihil odit laudantium est illo adipisci. Molestias quaerat ea vero, quibusdam deserunt odit cumque perferendis. Temporibus dolor atque alias consequatur.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo dignissimos rem reiciendis praesentium, voluptatibus laborum dolorem exercitationem mollitia eaque. Possimus commodi quisquam exercitationem nulla! Ipsum explicabo natus tempore eius dolores?</p>
+        <aside class="left">
+            
+                    <nav class="navigation">
+            <a href="./index.html">Etusivu</a>
+            
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Toiminta</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="https://fi.wikipedia.org/wiki/Rambo_(elokuva)"target="iframe_a" > Rambo </a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button onclick="myFunction2()" class="dropbtn">Komedia</button>
+                <div id="myDropdown2" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div><div class="dropdown">
+                <button onclick="myFunction3()" class="dropbtn">Fantasia</button>
+                <div id="myDropdown3" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div><div class="dropdown">
+                <button onclick="myFunction4()" class="dropbtn">Scifi</button>
+                <div id="myDropdown4" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+        </nav>
+            
+                </aside>
+        <article class="right">
+            <iframe src="main.html" style="border-radius: 2px;" name="iframe_a" height= "500px" width="100%" title="Iframe Example"></iframe>
+            
         </article>
-        <aside class="right">
-            <h2>Sivuhuomautus</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Bootrap</li>
-                <li>W3.CSS</li>
-                <li>Material UI</li>
-            </ul>
-        </aside>
+        
     </main>
 
     <footer class="footer">
         It-Velhot &copy; 2022
     </footer>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction2() {
+              document.getElementById("myDropdown2").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+            <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction3() {
+                  document.getElementById("myDropdown3").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
+                <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction4() {
+                      document.getElementById("myDropdown4").classList.toggle("show");
+                    }
+                    
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                    </script>
 </body>
 </html>
